@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIXELINK | AI Solutions for Modern Healthcare</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- ลิงก์ไปยังไฟล์ CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="lang-en">
+
+    <!-- Cyber Background Elements -->
+    <div class="bg-container">
+        <div class="bg-grid"></div>
+        <div class="bg-scanline"></div>
+    </div>
+
+    <!-- Header & Language Switcher -->
+    <header>
+        <div class="logo">AIXE<span>LINK</span></div>
+        <div class="nav-controls">
+            <nav class="nav-links">
+                <a href="link_to_demo_page.html">SOLUTIONS</a>
+                <a href="link_to_demo_page.html">ABOUT US</a>
+            </nav>
+            
+            <!-- ส่วนปุ่มสลับภาษาแบบ Dropdown -->
+            <div class="lang-switcher">
+                <select id="lang-select" onchange="changeLanguage(this.value)">
+                    <option value="en">EN</option>
+                    <option value="th">TH</option>
+                    <option value="jp">JP</option> <!-- ตัวอย่างภาษาที่ 3 -->
+                </select>
+            </div>
+            
+            <!-- ใส่ลิงก์สำหรับปุ่ม DEMO ที่นี่ (แทนที่ # ด้วย URL ของคุณ) -->
+            <a href="link_to_demo_page.html" class="btn-demo">DEMO</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section (Hexagon Matrix Component) -->
+        <section class="hero-container">
+            <div class="hero-header">
+                <h2> AI Solutions for Modern Healthcare </h2>
+                <!-- รองรับหลายภาษา -->
+                <p class="en">The Intelligence Layer for<br><strong>High-Performance Care</strong></p>
+                <p class="th">ชั้นเลเยอร์อัจฉริยะเพื่อ<br><strong>การดูแลรักษาประสิทธิภาพสูง</strong></p>
+                <p class="jp">インテリジェンス層のための<br><strong>高性能なケア</strong></p>
+            </div>
+
+            <div class="split-layout">
+                <!-- รังผึ้งส่งข้อมูล 2 ภาษา และเพิ่มพารามิเตอร์สุดท้ายคือ "URL ปลายทาง" -->
+                <div class="hex-stage">
+                    <div class="hex-box p-core" onclick="selectHex(this, 'AI CORE', 'ศูนย์กลาง AI', 'Centralized clinical intelligence platform designed to unify, process, and optimize real-time healthcare operations.', 'ระบบประมวลผลอัจฉริยะร่วมวิเคราะห์ข้อมูลคลินิกกว่า 1.2 ล้านจุดต่อวินาทีอย่างแม่นยำสูงสุด', 'var(--color-core)', 'link_to_aicore.html')">
+                        <div class="hex-float"><div class="hex-shape"><div class="hex-label">AI Core</div></div></div>
+                    </div>
+                    <div class="hex-box p1" onclick="selectHex(this, 'icuCare', 'ระบบ icuCare', 'Proactive monitoring ecosystem designed for high-acuity environments.', 'ระบบเฝ้าระวังเชิงรุกที่ออกแบบมาเพื่อสภาวะผู้ป่วยวิกฤตโดยเฉพาะ', 'var(--color-icu)', 'link_to_icucare.html')">
+                        <div class="hex-float"><div class="hex-shape"><div class="hex-label">icuCare</div></div></div>
+                    </div>
+                    <div class="hex-box p2" onclick="selectHex(this, 'orCare', 'ระบบ orCare', 'Surgical workflow orchestration with millisecond latency synchronization.', 'การจัดลำดับขั้นตอนในห้องศัลยกรรมอย่างแม่นยำด้วยการซิงค์ข้อมูลระดับมิลลิวินาที', 'var(--color-or)', 'link_to_orcare.html')">
+                        <div class="hex-float"><div class="hex-shape"><div class="hex-label">orCare</div></div></div>
+                    </div>
+                    <div class="hex-box p3" onclick="selectHex(this, 'MedFlow', 'ระบบ MedFlow', 'Closed-loop medication management with zero-error validation.', 'การจัดการระบบยาแบบวงปิดพร้อมการตรวจสอบที่การันตีความผิดพลาดเป็นศูนย์', 'var(--color-meds)', 'link_to_medflow.html')">
+                        <div class="hex-float"><div class="hex-shape"><div class="hex-label">CareLink</div></div></div>
+                    </div>
+                    <div class="hex-box p4" onclick="selectHex(this, 'Custom AI', 'เอไอเฉพาะทาง', 'Deep learning models tailored to your hospital’s unique patient demographics.', 'โมเดลการเรียนรู้เชิงลึกที่ปรับแต่งให้เข้ากับข้อมูลประชากรผู้ป่วยเฉพาะของโรงพยาบาลคุณ', 'var(--color-custom)', 'link_to_customai.html')">
+                        <div class="hex-float"><div class="hex-shape"><div class="hex-label">Carehub</div></div></div>
+                    </div>
+                    <div class="hex-box p5" onclick="selectHex(this, 'TraumaLink', 'ระบบ TraumaLink', 'Emergency department synchronization for rapid-response trauma care.', 'การเชื่อมโยงข้อมูลแผนกฉุกเฉินเพื่อส่งต่อและดูแลผู้ป่วยอุบัติเหตุอย่างรวดเร็ว', 'var(--color-trauma)', 'link_to_traumalink.html')">
+                        <div class="hex-float"><div class="hex-shape"><div class="hex-label">Custom</div></div></div>
+                    </div>
+                </div>
+
+                <!-- Info Panel ข้างรังผึ้ง -->
+                <div class="info-side" id="infoPanel">
+                    <div id="idleUI" class="text-center">
+                        <div class="pulse-icon">⎔</div>
+                        <p class="status-standby en">SYSTEM IDLE</p>
+                        <p class="status-standby th">ระบบพร้อมทำงาน</p>
+                        <p class="status-standby jp">システム待機中</p>
+                        
+                        <p class="status-hint en">Establish connection via module selection</p>
+                        <p class="status-hint th">โปรดเลือกโมดูลเพื่อเริ่มการเชื่อมต่อข้อมูล</p>
+                        <p class="status-hint jp">モジュールを選択して接続を確立してください</p>
+                    </div>
+                    <div id="activeUI" style="display: none; animation: fadeIn 0.8s ease;">
+                        <span id="activeTag" class="active-tag en">SYSTEM STATUS: OPTIMIZED</span>
+                        <span id="activeTagTh" class="active-tag th">สถานะระบบ: มีประสิทธิภาพสูงสุด</span>
+                        <span id="activeTagJp" class="active-tag jp">システムステータス: 最適化済み</span>
+                        
+                        <h1 id="d-title" class="active-title">Title</h1>
+                        <p id="d-desc" class="active-desc">Description</p>
+                        
+                        <!-- เปลี่ยนจาก Button ธรรมดาเป็นปุ่มที่ทำงานเปิดลิงก์ผ่าน JS -->
+                        <button id="d-btn" class="active-btn">
+                            <span class="en">EXPLORE MODULE</span>
+                            <span class="th">สำรวจโมดูลนี้</span>
+                            <span class="jp">モジュールを探索</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 1: Hub -->
+        <section class="premium-section reveal">
+            <div class="section-layout">
+                <div class="premium-img-box">
+                    <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=1200" alt="Tech Infrastructure">
+                    <div class="img-overlay"></div>
+                </div>
+                <div class="premium-text-box">
+                    <span class="premium-tag en">INFRASTRUCTURE</span>
+                    <span class="premium-tag th">โครงสร้างพื้นฐาน</span>
+                    <span class="premium-tag jp">インフラストラクチャー</span>
+                    
+                    <h2 class="premium-title en">The <strong>IDH Core</strong> Hub</h2>
+                    <h2 class="premium-title th">ศูนย์กลาง <strong>IDH Core</strong></h2>
+                    <h2 class="premium-title jp">IDH <strong>コア</strong> ハブ</h2>
+                    
+                    <p class="premium-desc en">Standardizing diverse medical data streams with enterprise-grade security. A foundation built for seamless clinical interoperability and future-proof scaling.</p>
+                    <p class="premium-desc th">แปลงกระแสข้อมูลทางการแพทย์ที่หลากหลายให้เป็นมาตรฐานเดียวกันด้วยความปลอดภัยระดับองค์กร พื้นฐานที่สร้างขึ้นเพื่อการทำงานร่วมกันทางคลินิกอย่างไร้รอยต่อ</p>
+                    <p class="premium-desc jp">エンタープライズレベルのセキュリティで多様な医療データストリームを標準化します。</p>
+                    
+                    <!-- เปลี่ยนปุ่มเป็นลิงก์ <a> ใส่ URL ที่นี่ -->
+                    <a href="link_to_architecture.html" class="btn-premium-link">
+                        <span class="en">VIEW ARCHITECTURE <span class="arrow">→</span></span>
+                        <span class="th">ดูสถาปัตยกรรมระบบ <span class="arrow">→</span></span>
+                        <span class="jp">アーキテクチャを見る <span class="arrow">→</span></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: Sharding -->
+        <section class="premium-section dark-theme reveal">
+            <div class="section-layout reverse">
+                <div class="premium-img-box">
+                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1200" alt="Cyber Security">
+                    <div class="img-overlay"></div>
+                </div>
+                <div class="premium-text-box">
+                    <span class="premium-tag en">SECURITY</span>
+                    <span class="premium-tag th">ความปลอดภัยระดับสูง</span>
+                    <span class="premium-tag jp">セキュリティ</span>
+                    
+                    <h2 class="premium-title en">Neural <strong>Sharding</strong></h2>
+                    <h2 class="premium-title th">การย่อยข้อมูลศลัยวิทยา <strong>Neural Sharding</strong></h2>
+                    <h2 class="premium-title jp">ニューラル <strong>シャーディング</strong></h2>
+                    
+                    <p class="premium-desc en">Security that exceeds global standards. Our proprietary sharding protocol ensures clinical records are fragmented and distributed, rendering data breaches obsolete.</p>
+                    <p class="premium-desc th">ความปลอดภัยที่เหนือกว่ามาตรฐานสากล โปรโตคอลการกระจายไฟล์ที่เป็นเอกสิทธิ์ของเราช่วยให้มั่นใจได้ว่าบันทึกการรักษาจะถูกเข้ารหัสแยกส่วน ทำให้การโจรกรรมข้อมูลเป็นไปไม่ได้</p>
+                    <p class="premium-desc jp">世界基準を超えるセキュリティ。独自のプロトコルでデータ漏洩を完全に防ぎます。</p>
+                    
+                    <!-- เปลี่ยนปุ่มเป็นลิงก์ <a> ใส่ URL ที่นี่ -->
+                    <a href="link_to_security.html" class="btn-premium-link">
+                        <span class="en">SECURITY PROTOCOLS <span class="arrow">→</span></span>
+                        <span class="th">ข้อกำหนดความปลอดภัย <span class="arrow">→</span></span>
+                        <span class="jp">セキュリティプロトコル <span class="arrow">→</span></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: Vitalis -->
+        <section class="premium-section reveal">
+            <div class="section-layout">
+                <div class="premium-img-box">
+                    <img src="https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&w=1200" alt="Medical AI">
+                    <div class="img-overlay"></div>
+                </div>
+                <div class="premium-text-box">
+                    <span class="premium-tag en">PRECISION AI</span>
+                    <span class="premium-tag th">ปัญญาประดิษฐ์ความแม่นยำสูง</span>
+                    <span class="premium-tag jp">精密AI</span>
+                    
+                    <h2 class="premium-title en">Predictive <strong>Vitalis</strong></h2>
+                    <h2 class="premium-title th">ระบบพยากรณ์โรค <strong>Predictive Vitalis</strong></h2>
+                    <h2 class="premium-title jp">予測的 <strong>Vitalis</strong></h2>
+                    
+                    <p class="premium-desc en">Deep learning algorithms that anticipate patient deterioration hours before clinical triggers. Move from reactive treatment to proactive care.</p>
+                    <p class="premium-desc th">อัลกอริทึมการเรียนรู้เชิงลึกที่คาดการณ์การทรุดตัวของผู้ป่วยได้ล่วงหน้าหลายชั่วโมงก่อนเกิดอาการวิกฤต เปลี่ยนผ่านจากการรักษาตามอาการสู่การพยากรณ์และป้องกันเชิงรุก</p>
+                    <p class="premium-desc jp">臨床的トリガーの数時間前に患者の悪化を予測する深層学習アルゴリズム。</p>
+                    
+                    <!-- เปลี่ยนปุ่มเป็นลิงก์ <a> ใส่ URL ที่นี่ -->
+                    <a href="link_to_clinical_impact.html" class="btn-premium-link">
+                        <span class="en">CLINICAL IMPACT <span class="arrow">→</span></span>
+                        <span class="th">ผลลัพธ์ทางคลินิก <span class="arrow">→</span></span>
+                        <span class="jp">臨床的影響 <span class="arrow">→</span></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4: Workflow -->
+        <section class="premium-section dark-theme reveal">
+            <div class="section-layout reverse">
+                <div class="premium-img-box">
+                    <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1200" alt="Smart Workflow">
+                    <div class="img-overlay"></div>
+                </div>
+                <div class="premium-text-box">
+                    <span class="premium-tag en">ORCHESTRATION</span>
+                    <span class="premium-tag th">การจัดลำดับกระบวนการ</span>
+                    <span class="premium-tag jp">オーケストレーション</span>
+                    
+                    <h2 class="premium-title en">Smart <strong>Workflow</strong></h2>
+                    <h2 class="premium-title th">ระบบจัดการงานอัจฉริยะ <strong>Smart Workflow</strong></h2>
+                    <h2 class="premium-title jp">スマート <strong>ワークフロー</strong></h2>
+                    
+                    <p class="premium-desc en">Eliminating operational friction with real-time resource allocation. We optimize hospital throughput, ensuring every second is spent on what matters: the patient.</p>
+                    <p class="premium-desc th">ลดความซับซ้อนในการปฏิบัติงานด้วยการจัดสรรทรัพยากรแบบเรียลไทม์ เพิ่มขีดความสามารถในการรองรับผู้ป่วย เพื่อให้มั่นใจว่าทุกวินาทีอันมีค่าถูกใช้ไปกับผู้ป่วยอย่างแท้จริง</p>
+                    <p class="premium-desc jp">リアルタイムのリソース割り当てにより運用上の摩擦を排除します。</p>
+                    
+                    <!-- เปลี่ยนปุ่มเป็นลิงก์ <a> ใส่ URL ที่นี่ -->
+                    <a href="link_to_efficiency.html" class="btn-premium-link">
+                        <span class="en">EFFICIENCY METRICS <span class="arrow">→</span></span>
+                        <span class="th">ชี้วัดประสิทธิภาพ <span class="arrow">→</span></span>
+                        <span class="jp">効率指標 <span class="arrow">→</span></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 5: IDH Hardware -->
+        <section class="premium-section reveal">
+            <div class="section-layout">
+                <div class="premium-img-box idh-carousel">
+                    <!-- Manual Navigation -->
+                    <div class="idh-nav-btn idh-nav-prev" onclick="manualChangeSlide(-1)">❮</div>
+                    <div class="idh-nav-btn idh-nav-next" onclick="manualChangeSlide(1)">❯</div>
+                    
+                    <div class="idh-slides-wrapper">
+                        <div class="idh-slide active">
+                            <img src="https://www.interdiscount.ch/static-shops/products/720/e12e565efadc3f2d4917949e6f7b7753d5cf.jpg" alt="IDH Front Dynamic Angle View">
+                        </div>
+                        <div class="idh-slide">
+                            <img src="https://www.interdiscount.ch/static-shops/products/720/c6ae246710b200264e4b83e97639d1137c78.jpg" alt="IDH Top Minimalist Structural View">
+                        </div>
+                        <div class="idh-slide">
+                            <img src="https://www.interdiscount.ch/static-shops/products/720/a84b9d83ab5b2cbf4db7bace544b5c79fd5c.jpg" alt="IDH Hardware Profiles and Form factor View">
+                        </div>
+                    </div>
+                    <div class="img-overlay"></div>
+                    <div class="carousel-indicators">
+                        <span class="indicator-dot active" onclick="goToSlide(0)"></span>
+                        <span class="indicator-dot" onclick="goToSlide(1)"></span>
+                        <span class="indicator-dot" onclick="goToSlide(2)"></span>
+                    </div>
+                </div>
+                <div class="premium-text-box">
+                    <span class="premium-tag en">HARDWARE PLATFORM</span>
+                    <span class="premium-tag th">สถาปัตยกรรมฮาร์ดแวร์</span>
+                    <span class="premium-tag jp">ハードウェアプラットフォーム</span>
+                    
+                    <h2 class="premium-title">IDH : <strong>intelligence device hub</strong></h2>
+                    
+                    <p class="premium-desc en">An architectural revolution in medical hardware. An ultra-compact form factor milled from premium anodized aluminum, engineered to process decentralized Edge AI models locally at the point of care.</p>
+                    <p class="premium-desc th">การปฏิวัติทางสถาปัตยกรรมฮาร์ดแวร์ทางการแพทย์ขนาดกะทัดรัด (Ultra-compact) หล่อขึ้นรูปด้วยอลูมิเนียมอโนไดซ์ระดับพรีเมียม ขับเคลื่อนโมเดล AI แบบกระจายศูนย์เพื่อประมวลผล ณ จุดดูแลผู้ป่วยทันที</p>
+                    <p class="premium-desc jp">医療ハードウェアにおけるアーキテクチャの革命。プレミアムアルミニウムから作られています。</p>
+                    
+                    <ul class="premium-features">
+                        <li class="en"><span>✦</span> Ultra-compact structural footprint (Inspired by Mac Mini core)</li>
+                        <li class="th"><span>✦</span> โครงสร้างสถาปัตยกรรมขนาดกะทัดรัดเป็นพิเศษ (แรงบันดาลใจจาก Mac Mini)</li>
+                        <li class="jp"><span>✦</span> 超小型の構造フットプリント</li>
+                        
+                        <li class="en"><span>✦</span> Edge AI Neuro-processing optimization array</li>
+                        <li class="th"><span>✦</span> อาร์เรย์ประมวลผลโครงข่ายประสาทเทียมแบบ Edge AI ในตัว</li>
+                        <li class="jp"><span>✦</span> エッジAIニューロ処理最適化アレイ</li>
+                        
+                        <li class="en"><span>✦</span> Advanced continuous 3D-thermal dissipation technology</li>
+                        <li class="th"><span>✦</span> เทคโนโลยีระบายความร้อน 3 มิติประสิทธิภาพสูงแบบต่อเนื่อง</li>
+                        <li class="jp"><span>✦</span> 高度な連続3D熱放散技術</li>
+                    </ul>
+                    
+                    <!-- เปลี่ยนปุ่มเป็นลิงก์ <a> ใส่ URL ที่นี่ -->
+                    <a href="link_to_idh_specs.html" class="btn-premium-link">
+                        <span class="en">EXPLORE IDH SPECIFICATIONS <span class="arrow">→</span></span>
+                        <span class="th">สำรวจข้อมูลทางเทคนิคของ IDH <span class="arrow">→</span></span>
+                        <span class="jp">IDH仕様を探る <span class="arrow">→</span></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© AIXELINK Sàrl 2026 | <strong>THE OPERATING SYSTEM FOR MODERN MEDICINE</strong></p>
+    </footer>
+
+    <!-- ลิงก์ไปยังไฟล์ JS -->
+    <script src="script.js"></script>
+</body>
+</html>
